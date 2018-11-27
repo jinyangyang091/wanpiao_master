@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!--<import type="android.view.View"/>-->
+        <!--<variable-->
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CDB884">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="54dp"
+            android:layout_weight="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:background="#1C1C1E">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_movie_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="386dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="303dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/iv_movie_bg"
+                    app:srcCompat="@mipmap/img_shade" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="292dp"
+                    android:layout_marginEnd="94dp"
+                    android:text="Murder On The Orient Express"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:typeface="@{@string/font_medium}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="18dp"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.wanpiao.master.widgets.views.RatingBar
+                            android:id="@+id/rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            app:canChange="false"
+                            app:startTotalNumber="5"
+                            app:selectedNumber="2.5"
+                            app:starDistance="5dp"
+                            app:starEmptyRes="@mipmap/icon_star_normal_large2"
+                            app:starIsFull="false"
+                            app:starSelectedRes="@mipmap/icon_disabled_star_large2" />
+                        <TextView
+                            android:id="@+id/movie_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="13dp"
+                            android:text="5.6"
+                            android:textColor="#DEC993"
+                            android:textSize="24sp"
+                            android:typeface="@{@string/font_regular}" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/sub_film_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/movie_length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="97分鐘"
+                            android:textColor="#DFD6DF"
+                            android:textSize="15sp"
+                            android:typeface="@{@string/font_medium}" />
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="21dp"
+                            android:background="#6A6A6D" />
+
+                        <TextView
+                            android:id="@+id/movie_language"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:text="粤语"
+                            android:textColor="#DFD6DF"
+                            android:textSize="15sp"
+                            android:typeface="@{@string/font_medium}" />
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="21dp"
+                            android:background="#6A6A6D" />
+
+                        <TextView
+                            android:id="@+id/movie_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:text="IIA级"
+                            android:textColor="#DFD6DF"
+                            android:textSize="15sp"
+                            android:typeface="@{@string/font_medium}" />
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="21dp"
+                            android:background="#6A6A6D" />
+
+                        <TextView
+                            android:id="@+id/movie_public_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:text="2018年9月20日"
+                            android:textColor="#DFD6DF"
+                            android:textSize="15sp"
+                            android:typeface="@{@string/font_medium}" />
+                    </LinearLayout>
+
+                    <com.wanpiao.master.widgets.views.FolderTextView
+                        android:id="@+id/stv_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginStart="3dp"
+                        android:textColor="#959595"
+                        android:textSize="15sp"
+                        android:typeface="@{@string/font_regular}"
+                        app:foldline="4"
+                        android:text="@string/comments"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/director"
+                            android:textColor="#6A6A6D"
+                            android:textSize="17sp"
+                            android:typeface="@{@string/font_medium}" />
+
+                        <TextView
+                            android:id="@+id/mDirector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:text="林生斌"
+                            android:textColor="#959595"
+                            android:textSize="17sp"
+                            android:typeface="@{@string/font_medium}" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/actor"
+                            android:textColor="#6A6A6D"
+                            android:textSize="17sp"
+                            android:typeface="@{@string/font_medium}" />
+                        <TextView
+                            android:id="@+id/mToStar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="21dp"
+                            android:text="林生斌、安彩泥、容祖兒"
+                            android:textColor="#959595"
+                            android:textSize="17sp"
+                            android:typeface="@{@string/font_medium}" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/top_comment_title">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recommended_film_reviews"
+                            android:textColor="#F9EBF6"
+                            android:textSize="16sp"
+                            android:typeface="@{@string/font_seguisb}" />
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/film_origin" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/top_comment">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="88dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <com.wanpiao.master.widgets.views.RatingBar
+                                android:id="@+id/rb_small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:canChange="false"
+                                app:selectedNumber="3"
+                                app:starDistance="3dp"
+                                app:starEmptyRes="@mipmap/icon_star_normal"
+                                app:starIsFull="false"
+                                app:starSelectedRes="@mipmap/icon_disabled_star" />
+
+                            <TextView
+                                android:id="@+id/top_comment_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="13dp"
+                                android:text="5.6"
+                                android:gravity="bottom"
+                                android:textColor="#BBA777"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_regular}" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="38dp"
+                            android:background="@drawable/bg_film_radius_fec"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/userName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="75dp"
+                                android:layout_marginTop="6dp"
+                                android:text="用户昵称"
+                                android:textColor="#1C1C1E"
+                                android:textSize="16sp"
+                                android:typeface="@{@string/font_bold}" />
+
+                            <TextView
+                                android:id="@+id/top_comment_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="75dp"
+                                android:text="04-24   16:53"
+                                android:textColor="#806E50"
+                                android:textSize="12sp"
+                                android:typeface="@{@string/font_regular}" />
+                            <TextView
+                                android:id="@+id/comment_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="17dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="6dp"
+                                android:text="置顶评论"
+                                android:textColor="#1B0021"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_medium}" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="7dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@mipmap/img_trophy_film" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/iv_user_head"
+                            android:layout_width="57dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="23dp"
+                            app:riv_corner_radius="18dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:src="@mipmap/infor_def_hard"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/comment_title">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/popular_film_review"
+                            android:textColor="#F9EBF6"
+                            android:textSize="16sp"
+                            android:typeface="@{@string/font_seguisb}" />
+                        <ImageView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/film_origin" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#C8B380"
+                        android:id="@+id/comment_divline"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comment_list">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/sub_comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never">
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </com.liaoinstan.springview.widget.SpringView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="23dp"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/icon_back_yellow" />
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="23dp"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/share_s"
+                android:visibility="gone"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#1C1C1E"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/comment_send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_comment" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:textColor="#DECEE1"
+                    android:textSize="18sp"
+                    android:typeface="@{@string/font_medium}" />
+                <TextView
+                    android:id="@+id/comment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#CCB785"
+                    android:textSize="12sp"
+                    android:typeface="@{@string/font_medium}" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#2A2A2A" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/dianzan_req">
+
+                <ImageView
+                    android:id="@+id/land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_land_pre"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=""
+                    android:textColor="#DECEE1"
+                    android:textSize="18sp"
+                    android:typeface="@{@string/font_medium}" />
+
+                <TextView
+                    android:id="@+id/dianzan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#CCB785"
+                    android:textSize="12sp"
+                    android:typeface="@{@string/font_medium}" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,82 @@
+<resources>
+    <!--字体适配请勿删除-->
+    <string name="font_balck">fonts/Roboto-Black.ttf</string>
+    <string name="font_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="font_seguisb">fonts/seguisb.ttf</string>
+
+    <!--以下是app字体-->
+    <string name="app_name">wanpiao</string>
+
+    <string name="my_information">我的資料</string>
+    <string name="preservation">保存</string>
+    <string name="language">語言</string>
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="personal_data">个人资料</string>
+    <string name="on_us">關於我們</string>
+    <string name="terms_of_service">服務條款</string>
+    <string name="privacy_policy">隱私政策</string>
+    <string name="go_out">登出</string>
+    <string name="release">发布</string>
+    <string name="close_lab">关闭</string>
+    <string name="range">極品差!</string>
+    <string name="poor">麻麻地!</string>
+    <string name="commonly">一般啦!</string>
+    <string name="pretty_good">OK啦!</string>
+    <string name="excellent">好正啊!</string>
+    <string name="voice_comment">语音点评</string>
+    <string name="text_comment">文字点评</string>
+    <string name="default_comment">你想讚下部戲定係想X下部戲？</string>
+    <string name="longpress_tip">長按錄製，語音評論</string>
+
+    <string name="actor">演員</string>
+    <string name="release_time">上映时间:</string>
+    <string name="director">導演</string>
+    <string name="recommended_film_reviews">推荐影评</string>
+    <string name="popular_film_review">大众影评</string>
+    <string name="comment">評論</string>
+    <string name="point_of_praise">點贊</string>
+    <string name="notice">通知</string>
+    <string name="what_is_the_movie_like">你想讚下部戲定係想X下部戲？</string>
+
+    <string name="home_information">資訊</string>
+    <string name="home_prevue">預告片</string>
+    <string name="home_xclusive_interview">專訪</string>
+    <string name="movie_title">電影</string>
+    <string name="tab_one">即日 / 預售</string>
+    <string name="tab_two">不日上映</string>
+    <string name="login_title">登入/註冊</string>
+    <string name="login_Apply">申請賬戶？</string>
+    <string name="login_mail">電郵</string>
+    <string name="login_as_well_as">以及</string>
+    <string name="login_tip">如果您進入下一步，則表示您已同意我們的</string>
+    <string name="login_pwd">密码</string>
+    <string name="pwd">密码</string>
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="tv_cancel">取消</string>
+    <string name="e_mail">電郵</string>
+    <string name="application_account">申請賬戶</string>
+    <string name="default_name">周潤發</string>
+    <string name="mail_login">以電郵登入</string>
+    <string name="my_info">我的通知</string>
+    <string name="set_up">设定</string>
+    <string name="my_comment">我的評論</string>
+    <string name="inland_title">內地資訊</string>
+    <string name="inland_info">内地資訊</string>
+    <string name="my_set">我的设定</string>
+    <string name="my_voice">语音识别</string>
+    <string name="lable1">玩票娱乐</string>
+    <string name="no_info_lable">暫無通知哦</string>
+    <string name="no_mycomment_lable">你還沒有寫過評論誒</string>
+
+
+    <string name="lable2">客服电话：021-6073 2851</string>
+
+    <string name="comments"> 黃渤這壹次真的拼了，用壹群人荒島求生的故事外殼好好地搞了壹出人性實驗，黑色，荒誕，瘋狂，從生存的法則. 部落的建立，文明的誕生，貨幣的誕生講到政權的形成以及烏托邦社會的破滅，而在其中穿插著壹個男人猶如摩西壹般的成長歷程，整個劇本的野心極大，不論是宏觀上還是微觀上都言之有物，連張藝興都會演戲了！ 黃渤這壹次真的拼了，用壹群人荒島求生</string>
+    
+</resources>

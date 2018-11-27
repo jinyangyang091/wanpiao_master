@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+<TextView android:id="@+id/textView"
+    android:text="冒险"
+    android:typeface="@{@string/font_medium}"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:layout_marginEnd="9dp"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:textSize="15sp"
+    android:background="@drawable/bg_film_label_radius"
+    android:textColor="#7C6E8D"
+    android:layout_height="21dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+</layout>

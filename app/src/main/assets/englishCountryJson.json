@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "countryName": "Indonesia",
+      "phoneCode": "62",
+      "countryCode": "ID"
+    },
+    {
+      "countryName": "China",
+      "phoneCode": "86",
+      "countryCode": "CN"
+    },
+    {
+      "countryName": "Vietnam",
+      "phoneCode": "84",
+      "countryCode": "VN"
+    },
+    {
+      "countryName": "Malaysia",
+      "phoneCode": "60",
+      "countryCode": "MY"
+    },
+    {
+      "countryName": "India",
+      "phoneCode": "91",
+      "countryCode": "IN"
+    },
+    {
+      "countryName": "Singapore",
+      "phoneCode": "65",
+      "countryCode": "SG"
+    },
+    {
+      "countryName": "Japan",
+      "phoneCode": "81",
+      "countryCode": "JP"
+    },
+    {
+      "countryName": "The Philippines",
+      "phoneCode": "63",
+      "countryCode": "TP"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+ext {
+    //Android configs  这里升级versionName 的1.X   buildxxxxx都要改！！！
+    config = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.2",
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : '1.0'
+    ]
+
+    supportDependencies = [
+            rxandroid                  : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            rxjava2                    : "io.reactivex.rxjava2:rxjava:2.2.2",
+            fresco                     : "com.facebook.fresco:fresco:1.10.0",
+            //https://github.com/JessYanCoding/AndroidAutoSize/blob/master/README-zh.md
+            autosize                   : 'me.jessyan:autosize:1.0.0',
+            //https://github.com/razerdp/BasePopup
+            BasePopup                  : 'com.github.razerdp:BasePopup:2.0.6',
+            jpush                      : 'cn.jiguang.sdk:jpush:3.1.6',// 此处以JPush 3.1.6 版本为例。
+            jcore                      : 'cn.jiguang.sdk:jcore:1.2.5',
+            //https://github.com/vinc3m1/RoundedImageView
+            RoundedImageView           : 'com.makeramen:roundedimageview:2.3.0',
+            //https://github.com/hongyangAndroid/FlowLayout
+            flowlayout                 : 'com.hyman:flowlayout-lib:1.1.2',
+            //https://github.com/LuckSiege/PictureSelector
+            PictureSelector            : 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3',
+            retrofit                   : 'com.squareup.retrofit2:retrofit:2.4.0',
+            adapter_rxjava2            : 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
+            converter_gson             : 'com.squareup.retrofit2:converter-gson:2.4.0',
+            //glide图片加载库
+            glide_compiler             : 'com.github.bumptech.glide:compiler:4.8.0',
+            glide                      : 'com.github.bumptech.glide:glide:4.8.0',
+            glide_okhttp3_integration  : 'com.github.bumptech.glide:okhttp3-integration:4.8.0',
+            //gson
+            gson                       : 'com.google.code.gson:gson:2.8.2',
+            //OkHttp
+            okhttp3                    : 'com.squareup.okhttp3:okhttp:3.11.0',
+            okhttp3_logging_interceptor: 'com.squareup.okhttp3:logging-interceptor:3.11.0',
+            //eventbus
+            eventbus                   : 'org.greenrobot:eventbus:3.1.1',
+    ]
+}

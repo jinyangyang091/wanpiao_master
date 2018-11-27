@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/actorname"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:background="@drawable/movie_type"
+            android:text="古天樂"
+            android:textColor="#ECECEC"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:typeface="@{@string/font_medium}"
+            />
+    </RelativeLayout>
+</layout>

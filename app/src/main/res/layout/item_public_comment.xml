@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1B0021"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="26dp"
+                app:riv_corner_radius="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="36dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户昵称"
+                        android:textColor="#F9EBF6"
+                        android:textSize="14sp"
+                        android:typeface="@{@string/font_medium}" />
+
+
+                    <com.wanpiao.master.widgets.views.RatingBar
+                        android:id="@+id/rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="141dp"
+                        android:layout_marginTop="3dp"
+                        app:canChange="false"
+                        app:selectedNumber="3"
+                        app:starDistance="3dp"
+                        app:starEmptyRes="@mipmap/icon_star_normal_comment"
+                        app:starIsFull="false"
+                        app:starSelectedRes="@mipmap/icon_disabled_star_comment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="5.6"
+                        android:textColor="#FEC159"
+                        android:textSize="15sp"
+                        android:typeface="@{@string/font_regular}" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"
+                    android:text="05-08   08:20"
+                    android:textColor="#402D42"
+                    android:textSize="14sp"
+                    android:typeface="@{@string/font_medium}" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="22dp"
+            android:text="这是一部很有意思的片子，over"
+            android:textColor="#C8BBCA"
+            android:textSize="15sp"
+            android:typeface="@{@string/font_medium}" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#321F33" />
+    </LinearLayout>
+
+</layout>

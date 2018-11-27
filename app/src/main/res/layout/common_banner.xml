@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.wanpiao.master.mvp.ui.BannerLayout
+            android:id="@+id/common_banner"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            app:autoPlayDuration="3000"
+            app:indicatorMargin="10dp"
+            app:indicatorShape="rect"
+            app:indicatorSpace="2dp"
+            app:layout_constraintDimensionRatio="23:10"
+            app:scrollDuration="1100"
+            app:selectedIndicatorColor="#9E8236"
+            app:selectedIndicatorHeight="2dp"
+            app:selectedIndicatorWidth="11dp"
+            app:titleColor="#ff0000"
+            app:unSelectedIndicatorColor="#656565"
+            app:unSelectedIndicatorHeight="2dp"
+            app:unSelectedIndicatorWidth="11dp"
+            android:background="@mipmap/def_banner"
+            />
+    </RelativeLayout>
+</layout>

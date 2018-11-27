@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="white_style_ffffff">#ffffff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="c_blue_ae86">#1ea086</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_010101">#010101</color>
+    <color name="c_efefef">#efefef</color>
+    <color name="c_dfdfdf">#dfdfdf</color>
+    <color name="black">#000000</color>
+    <color name="c_FEC159">#DAC590</color>
+    <color name="c_b77b7676">#b77b7676</color>
+    <color name="c_a6a6a6">#a6a6a6</color>
+    <color name="c_d2d2d2">#d2d2d2</color>
+    <color name="c_ededed">#ededed</color>
+    <color name="c_ed8722">#ed8722</color>
+    <color name="c_e20f0f">#e20f0f</color>
+    <color name="bg_gray">#efefef</color>
+    <color name="bg_ECB24F">#ECB24F</color>
+    <color name="bg_1D1D1D">#1D1D1D</color>
+    <color name="c_c5c5c5">#c5c5c5</color>
+    <color name="c_b5b5b5">#b5b5b5</color>
+    <color name="c_727272">#727272</color>
+    <color name="c_f1f1f1">#f1f1f1</color>
+    <color name="c_888888">#888888</color>
+    <color name="c_8d8d8d">#8d8d8d</color>
+    <color name="c_f7f7f7">#f7f7f7</color>
+    <color name="c_6b6b6b">#6b6b6b</color>
+    <color name="c_c1c1c1">#c1c1c1</color>
+    <color name="c_696969">#696969</color>
+    <color name="c_26a38a">#26a38a</color>
+    <color name="c_1A0020">#1A0020</color>
+    <color name="c_ffffff">#ffffff</color>
+
+
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="c_f9ebf6">#F9EBF6</color>
+    <color name="c_251429">#251429</color>
+    <color name="c_1b0021">#1B0021</color>
+    <!--  小星星颜色  -->
+    <color name="col_rate">#E5AD4C</color>
+
+    <!--  电影页面Tab背景颜色  -->
+    <color name="col_movie_tab_normal">#4B3D4B</color>
+    <color name="col_movie_tab_selected">#B58A40</color>
+    <!--  电影页面Tab字体颜色  -->
+    <color name="col_movie_text_normal">#7D717D</color>
+    <color name="col_movie_text_selected">#321F33</color>
+
+</resources>

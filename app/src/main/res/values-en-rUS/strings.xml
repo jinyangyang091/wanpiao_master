@@ -1,0 +1,81 @@
+<resources>
+    <!--字体适配请勿删除-->
+    <string name="font_balck">fonts/Roboto-Black.ttf</string>
+    <string name="font_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="font_seguisb">fonts/seguisb.ttf</string>
+
+    <!--以下是app字体-->
+    <string name="app_name">wanpiao</string>
+
+    <string name="my_information">My information</string>
+    <string name="preservation">Preservation</string>
+    <string name="language">Language</string>
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <string name="personal_data">personal data</string>
+    <string name="on_us">On us</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="go_out">Go out</string>
+    <string name="release">Release</string>
+    <string name="close_lab">Close</string>
+    <string name="range">Poor best!</string>
+    <string name="poor">It is numb!</string>
+    <string name="commonly">OK!</string>
+    <string name="pretty_good">What a good right!</string>
+    <string name="excellent">Pretty good</string>
+    <string name="voice_comment">Speech comment</string>
+    <string name="text_comment">Text comment</string>
+    <string name="default_comment">Do you want to praise the lower drama for X?</string>
+    <string name="longpress_tip">Long press recording, voice review</string>
+
+    <string name="actor">Actor</string>
+    <string name="release_time">Release time:</string>
+    <string name="director">Director</string>
+    <string name="recommended_film_reviews">Recommended film reviews</string>
+    <string name="popular_film_review">Popular film review</string>
+    <string name="comment">Comments</string>
+    <string name="point_of_praise">Point of praise</string>
+    <string name="notice">notice</string>
+    <string name="what_is_the_movie_like">Do you want to praise the lower drama for X?</string>
+
+    <string name="home_information">Information</string>
+    <string name="home_prevue">Trailer</string>
+    <string name="home_xclusive_interview">Interview</string>
+    <string name="movie_title">Film</string>
+    <string name="tab_one">Immediate / pre-sale</string>
+    <string name="tab_two">No day</string>
+    <string name="login_title">Login / registration</string>
+    <string name="login_Apply">Application account?</string>
+    <string name="login_mail">E-mail</string>
+    <string name="login_as_well_as">as well as</string>
+    <string name="login_tip">If you go to the next step, it means that you have agreed with us</string>
+    <string name="login_pwd">Password</string>
+    <string name="pwd">Password</string>
+    <string name="nick_name">Nickname</string>
+    <string name="sex">Sex</string>
+    <string name="man">Sex</string>
+    <string name="woman">female</string>
+    <string name="tv_cancel">取消</string>
+    <string name="e_mail">E-mail</string>
+    <string name="application_account">Application account</string>
+    <string name="default_name">Chow Yun Fat</string>
+    <string name="mail_login">Login by e-mail</string>
+    <string name="my_info">My notice</string>
+    <string name="set_up">Set up</string>
+    <string name="my_comment">My comments</string>
+    <string name="inland_title">Mainland information</string>
+    <string name="inland_info">Information on the mainland</string>
+    <string name="my_set">My setting</string>
+    <string name="my_voice">speech recognition</string>
+    <string name="lable1">Play Entertainment</string>
+    <string name="lable2">customer service telephone numbers：021-6073 2851</string>
+    <string name="no_mycomment_lable">You have not written a comment yet.</string>
+
+    <string name="no_info_lable">No notice.</string>
+
+    <string name="comments"> This time Huang and Bo really spelled, with a group of people living on a desert island story shell well done a human experiment, black, absurd, crazy, from the law of survival, tribal establishment, the birth of civilization, the birth of money on the formation of regime and the collapse of Utopian society, and interspersed with a man like a motorcycle Xiyi-like growth process, the ambition of the entire script is enormous, both macro and micro things are said, even Zhang Yixing will play! Huang Bo really fought this time, and used a group of people to survive on a desert island.</string>
+
+</resources>

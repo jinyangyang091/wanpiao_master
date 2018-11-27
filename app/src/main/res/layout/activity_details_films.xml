@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!--<import type="android.view.View"/>-->
+        <!--<variable-->
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDC892">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/sv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="54dp"
+            android:layout_weight="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:background="#1C1C1E">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_movie_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="386dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="303dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iv_movie_bg"
+                        app:srcCompat="@mipmap/img_shade" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="73dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="292dp"
+                        android:layout_marginEnd="94dp"
+                        android:text="Murder On The Orient Express"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:typeface="@{@string/font_medium}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="18dp"
+                        android:gravity="start"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/mPlayTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="29dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="2dp"
+                                android:text="上映时间:2018年9月20日"
+                                android:textColor="#CBB682"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_regular}" />
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/sub_film_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never">
+                        </androidx.recyclerview.widget.RecyclerView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/movie_length"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="97分鐘"
+                                android:textColor="#DFD6DF"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_medium}" />
+
+                            <ImageView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="21dp"
+                                android:background="#6A6A6D" />
+
+                            <TextView
+                                android:id="@+id/movie_language"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:text="粤语"
+                                android:textColor="#DFD6DF"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_medium}" />
+
+                            <ImageView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="21dp"
+                                android:background="#6A6A6D" />
+
+                            <TextView
+                                android:id="@+id/movie_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:text="IIA级"
+                                android:textColor="#DFD6DF"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_medium}" />
+
+                            <ImageView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="21dp"
+                                android:background="#6A6A6D" />
+
+                            <TextView
+                                android:id="@+id/movie_public_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:text="2018年9月20日"
+                                android:textColor="#DFD6DF"
+                                android:textSize="15sp"
+                                android:typeface="@{@string/font_medium}" />
+                        </LinearLayout>
+
+                        <com.wanpiao.master.widgets.views.FolderTextView
+                            android:id="@+id/stv_introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginEnd="12dp"
+                            android:textColor="#959595"
+                            android:textSize="15sp"
+                            android:typeface="@{@string/font_regular}"
+                            app:foldline="4"
+                            android:text=""
+                            android:textColorLink="#959595"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/director"
+                                android:textColor="#6A6A6D"
+                                android:textSize="17sp"
+                                android:typeface="@{@string/font_medium}" />
+                            <TextView
+                                android:id="@+id/mDirector"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:text="林生斌"
+                                android:textColor="#959595"
+                                android:textSize="17sp"
+                                android:typeface="@{@string/font_medium}" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/actor"
+                                android:textColor="#6A6A6D"
+                                android:textSize="17sp"
+                                android:typeface="@{@string/font_medium}" />
+
+                            <TextView
+                                android:id="@+id/mToStar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:text="林生斌、安彩泥、容祖兒"
+                                android:textColor="#959595"
+                                android:textSize="17sp"
+                                android:typeface="@{@string/font_medium}" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </com.liaoinstan.springview.widget.SpringView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="23dp"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/icon_back_yellow" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#1C1C1E"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/comment_myinfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/inform_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_inform_pre" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:textColor="#DECEE1"
+                    android:textSize="18sp"
+                    android:typeface="@{@string/font_medium}" />
+                <TextView
+                    android:id="@+id/comment_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FEC159"
+                    android:textSize="12sp"
+                    android:typeface="@{@string/font_medium}" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#181619" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/dianzan_req">
+                <ImageView
+                    android:id="@+id/land_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_land_pre" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=""
+                    android:textColor="#DECEE1"
+                    android:textSize="18sp"
+                    android:typeface="@{@string/font_medium}" />
+                <TextView
+                    android:id="@+id/dianzan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FEC159"
+                    android:textSize="12sp"
+                    android:typeface="@{@string/font_medium}" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>
