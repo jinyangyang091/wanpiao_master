@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/webview_title"
                 android:layout_marginTop="30dp"
-                android:text="标题"
+                android:text="标题标题"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:typeface="@{@string/font_bold}"
